@@ -117,6 +117,24 @@
                     
                 </div>
             </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/PassesThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\PassesThreadControl">PassesThreadControl</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/TakesThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\TakesThreadControl">TakesThreadControl</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
             </div>
     
     
@@ -178,6 +196,22 @@
                 <td>$messaging_url</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#property_messaging_url"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pass_thread_control_url">
+                                        protected                                        string
+                </td>
+                <td>$pass_thread_control_url</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/PassesThreadControl.html#property_pass_thread_control_url"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\PassesThreadControl">PassesThreadControl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_take_thread_control_url">
+                                        protected                                        string
+                </td>
+                <td>$take_thread_control_url</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/TakesThreadControl.html#property_take_thread_control_url"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\TakesThreadControl">TakesThreadControl</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_httpClient">
@@ -353,6 +387,26 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendShippingOptions">sendShippingOptions</a>(array $shipping_list = [])
+        
+                                            <p>echo shipping options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendShippingOptions"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_returnJson">returnJson</a>(array $data = [])
+        
+                                            <p>echo json response</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_returnJson"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -366,7 +420,7 @@
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sendText">sendText</a>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Text">Text</abbr></a> $message, array $quick_replies = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
+                    <a href="#method_sendText">sendText</a>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Text">Text</abbr></a> $message, array $quick_replies = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
         
                                             <p>send text message</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a></small></div>
@@ -413,6 +467,28 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_passThreadControl">passThreadControl</a>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient, $target_app_id, string $metadata = &quot;&quot;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/PassesThreadControl.html#method_passThreadControl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\PassesThreadControl">PassesThreadControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_takeThreadControl">takeThreadControl</a>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient, string $metadata = &quot;&quot;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/TakesThreadControl.html#method_takeThreadControl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\TakesThreadControl">TakesThreadControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -456,6 +532,16 @@
                     
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_emitAbstractChannelEvents">emitAbstractChannelEvents</a>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> $channelItem, string $channel = &quot;messaging&quot;)
+        
+                                            <p>emit abstract channel events</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_checkForPageAccessToken">checkForPageAccessToken</a>()
         
                                             <p>check if page access token has been provided before making any http request</p>                </div>
@@ -469,7 +555,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 47</div>
+        <div class="location">at         line 50</div>
         <code>                    
     <strong>__construct</strong>(array $config = [])
         </code>
@@ -542,7 +628,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createWebHookEvent">
-        <div class="location">at         line 93</div>
+        <div class="location">at         line 96</div>
         <code>            protected        
     <strong>createWebHookEvent</strong>()
         </code>
@@ -998,8 +1084,70 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sendShippingOptions">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendShippingOptions"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 38</div>
+        <code>                    
+    <strong>sendShippingOptions</strong>(array $shipping_list = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>echo shipping options</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$shipping_list</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_returnJson">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_returnJson"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 53</div>
+        <code>                    
+    <strong>returnJson</strong>(array $data = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>echo json response</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_sendPlainText">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendPlainText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 42</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendPlainText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 67</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>sendPlainText</strong>(string $text, array $quick_replies = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
         </code>
@@ -1049,9 +1197,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendText">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 55</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 80</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>sendText</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Text">Text</abbr></a> $message, array $quick_replies = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
+    <strong>sendText</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Text">Text</abbr></a> $message, array $quick_replies = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
         </code>
     </h3>
     <div class="details">
@@ -1065,7 +1213,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Text">Text</abbr></a></td>
+                <td><a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Text.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Text">Text</abbr></a></td>
                 <td>$message</td>
                 <td></td>
             </tr>
@@ -1099,7 +1247,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendAttachment">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendAttachment"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 80</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendAttachment"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 105</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>sendAttachment</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Attachments/AbstractAttachment.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Attachments\AbstractAttachment">AbstractAttachment</abbr></a> $message, <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
         </code>
@@ -1144,7 +1292,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendAction">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendAction"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 96</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendAction"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 121</div>
         <code>                    
     <strong>sendAction</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient, string $type = &#039;mark_seen&#039;)
         </code>
@@ -1180,7 +1328,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendSenderAction">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendSenderAction"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 120</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendSenderAction"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 145</div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>sendSenderAction</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/AbstractSenderAction.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\AbstractSenderAction">AbstractSenderAction</abbr></a> $message, <a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient)
         </code>
@@ -1225,7 +1373,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendMessage">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendMessage"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 131</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_sendMessage"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 156</div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>sendMessage</strong>($data)
         </code>
@@ -1264,8 +1412,99 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_passThreadControl">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/PassesThreadControl.html#method_passThreadControl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\PassesThreadControl">PassesThreadControl</abbr></a> at         line 34</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>passThreadControl</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient, $target_app_id, string $metadata = &quot;&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a></td>
+                <td>$recipient</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$target_app_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$metadata</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_takeThreadControl">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/TakesThreadControl.html#method_takeThreadControl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\TakesThreadControl">TakesThreadControl</abbr></a> at         line 33</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>takeThreadControl</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a> $recipient, string $metadata = &quot;&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/AbstractEndPoint.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\AbstractEndPoint">AbstractEndPoint</abbr></a></td>
+                <td>$recipient</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$metadata</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setPageAccessToken">
-        <div class="location">at         line 58</div>
+        <div class="location">at         line 61</div>
         <code>                    
     <strong>setPageAccessToken</strong>(string $page_access_token)
         </code>
@@ -1296,7 +1535,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_emitEvents">
-        <div class="location">at         line 68</div>
+        <div class="location">at         line 71</div>
         <code>                    
     <strong>emitEvents</strong>(<a href="../../../../Andre/Bionic/AbstractBionic.html"><abbr title="Andre\Bionic\AbstractBionic">AbstractBionic</abbr></a> $bionic)
         </code>
@@ -1327,7 +1566,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_newHttpClient">
-        <div class="location">at         line 80</div>
+        <div class="location">at         line 83</div>
         <code>            protected        <abbr title="GuzzleHttp\Client">Client</abbr>
     <strong>newHttpClient</strong>()
         </code>
@@ -1357,7 +1596,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_iterateOverEntryMessagesAndEmitEvents">
-        <div class="location">at         line 101</div>
+        <div class="location">at         line 104</div>
         <code>            protected        
     <strong>iterateOverEntryMessagesAndEmitEvents</strong>()
         </code>
@@ -1377,8 +1616,44 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_emitAbstractChannelEvents">
+        <div class="location">at         line 177</div>
+        <code>            protected        
+    <strong>emitAbstractChannelEvents</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> $channelItem, string $channel = &quot;messaging&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>emit abstract channel events</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></td>
+                <td>$channelItem</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$channel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_checkForPageAccessToken">
-        <div class="location">at         line 167</div>
+        <div class="location">at         line 215</div>
         <code>            protected        
     <strong>checkForPageAccessToken</strong>()
         </code>

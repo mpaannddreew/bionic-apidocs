@@ -147,10 +147,26 @@
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_standby">
+                                        protected                                        array
+                </td>
+                <td>$standby</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_messaging_items">
                                         protected                                        array
                 </td>
                 <td>$messaging_items</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_standby_items">
+                                        protected                                        array
+                </td>
+                <td>$standby_items</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -242,6 +258,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateStandbyItems">populateStandbyItems</a>()
+        
+                                            <p>populate standby items</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -278,6 +304,26 @@
                     <a href="#method_getMessagingItems">getMessagingItems</a>()
         
                                             <p>get messaging items</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStandby">getStandby</a>()
+        
+                                            <p>get standby object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStandbyItems">getStandbyItems</a>()
+        
+                                            <p>get standby items</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -409,7 +455,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 58</div>
         <code>                    
     <strong>__construct</strong>($data)
         </code>
@@ -510,7 +556,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_populateMessagingItems">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 68</div>
         <code>            protected        
     <strong>populateMessagingItems</strong>()
         </code>
@@ -530,8 +576,29 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_populateStandbyItems">
+        <div class="location">at         line 79</div>
+        <code>            protected        
+    <strong>populateStandbyItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate standby items</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getId">
-        <div class="location">at         line 70</div>
+        <div class="location">at         line 92</div>
         <code>                    string
     <strong>getId</strong>()
         </code>
@@ -561,7 +628,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTime">
-        <div class="location">at         line 80</div>
+        <div class="location">at         line 102</div>
         <code>                    int
     <strong>getTime</strong>()
         </code>
@@ -591,7 +658,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMessaging">
-        <div class="location">at         line 90</div>
+        <div class="location">at         line 112</div>
         <code>                    array
     <strong>getMessaging</strong>()
         </code>
@@ -621,7 +688,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMessagingItems">
-        <div class="location">at         line 100</div>
+        <div class="location">at         line 122</div>
         <code>                    array
     <strong>getMessagingItems</strong>()
         </code>
@@ -632,6 +699,66 @@
 
                     <div class="method-description">
                                     <p>get messaging items</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStandby">
+        <div class="location">at         line 132</div>
+        <code>                    array
+    <strong>getStandby</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get standby object</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStandbyItems">
+        <div class="location">at         line 142</div>
+        <code>                    array
+    <strong>getStandbyItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get standby items</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

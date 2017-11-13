@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Andre\Bionic\Plugins\Messenger\Messages\Payload\ListTemplatePayload | Bionic Api Documentation</title>
+    <title>Andre\Bionic\Plugins\Messenger\Messages\Payment\ShippingAddress | Bionic Api Documentation</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Andre_Bionic_Plugins_Messenger_Messages_Payload_ListTemplatePayload" data-root-path="../../../../../../">
+    <body id="class" data-name="class:Andre_Bionic_Plugins_Messenger_Messages_Payment_ShippingAddress" data-root-path="../../../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../../../Andre.html">Andre</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic.html">Bionic</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins.html">Plugins</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger.html">Messenger</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages.html">Messages</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload.html">Payload</a></li><li class="backslash">\</li><li>ListTemplatePayload</li>
+                        <li><a href="../../../../../../Andre.html">Andre</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic.html">Bionic</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins.html">Plugins</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger.html">Messenger</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages.html">Messages</a></li><li class="backslash">\</li><li><a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment.html">Payment</a></li><li class="backslash">\</li><li>ShippingAddress</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ListTemplatePayload
+            ShippingAddress
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>ListTemplatePayload</strong>        extends <a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a>
+    <strong>ShippingAddress</strong>        extends <a href="../../../../../../Andre/Bionic/AbstractMessage.html"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a>
 </p>
 
         
@@ -110,53 +110,6 @@
             </div>
             </div>
     
-            <h2>Constants</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td>BUTTON</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>LIST_</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>GENERIC</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>OPEN_GRAPH</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>RECEIPT</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>MEDIA</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
             <h2>Properties</h2>
 
@@ -170,34 +123,66 @@
                 <td><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Traits/IsADataWrapper.html#property_data"><abbr title="Andre\Bionic\Traits\IsADataWrapper">IsADataWrapper</abbr></a></small></td>
             </tr>
                     <tr>
-                <td class="type" id="property_template_type">
-                                        protected                                        string
+                <td class="type" id="property_id">
+                                        protected                                        int
                 </td>
-                <td>$template_type</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/AbstractTemplatePayload.html#property_template_type"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\AbstractTemplatePayload">AbstractTemplatePayload</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_elements">
-                                        protected                                        array
-                </td>
-                <td>$elements</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html#property_elements"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_top_element_style">
-                                        protected                                        string
-                </td>
-                <td>$top_element_style</td>
+                <td>$id</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_buttons">
-                                        protected                                        array
+                <td class="type" id="property_name">
+                                        protected                                        string
                 </td>
-                <td>$buttons</td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_street_1">
+                                        protected                                        string
+                </td>
+                <td>$street_1</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_street_2">
+                                        protected                                        string
+                </td>
+                <td>$street_2</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_city">
+                                        protected                                        string
+                </td>
+                <td>$city</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_state">
+                                        protected                                        string
+                </td>
+                <td>$state</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_country">
+                                        protected                                        string
+                </td>
+                <td>$country</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postal_code">
+                                        protected                                        string
+                </td>
+                <td>$postal_code</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -254,8 +239,8 @@
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>($data = [])
         
-                                            <p>AbstractTemplatePayload constructor.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/AbstractTemplatePayload.html#method___construct"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\AbstractTemplatePayload">AbstractTemplatePayload</abbr></a></small></div>
+                                            <p>new message instance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../Andre/Bionic/AbstractMessage.html#method___construct"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -279,82 +264,162 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getTemplateType">getTemplateType</a>()
+                    <a href="#method_getId">getId</a>()
         
-                                            <p>get template type</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/AbstractTemplatePayload.html#method_getTemplateType"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\AbstractTemplatePayload">AbstractTemplatePayload</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setTemplateType">setTemplateType</a>()
-        
-                                            <p>set template type</p>                </div>
+                                            <p>get id</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getElements">getElements</a>()
+                    <a href="#method_setId">setId</a>(int $id)
         
-                                            <p>get elements</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html#method_getElements"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setElements">setElements</a>(array $elements)
-        
-                                            <p>set elements</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html#method_setElements"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a></small></div>
+                                            <p>set id</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getTopElementStyle">getTopElementStyle</a>()
+                    <a href="#method_getName">getName</a>()
         
-                                            <p>get top element style</p>                </div>
+                                            <p>get name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setTopElementStyle">setTopElementStyle</a>(string $top_element_style)
+                    <a href="#method_setName">setName</a>(string $name)
         
-                                            <p>set top element style</p>                </div>
+                                            <p>set name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getButtons">getButtons</a>()
+                    <a href="#method_getStreet1">getStreet1</a>()
         
-                                            <p>get buttons</p>                </div>
+                                            <p>get street 1</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setButtons">setButtons</a>(array $buttons)
+                    <a href="#method_setStreet1">setStreet1</a>(string $street_1)
         
-                                            <p>set buttons</p>                </div>
+                                            <p>set street 1</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStreet2">getStreet2</a>()
+        
+                                            <p>get street 2</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStreet2">setStreet2</a>(string $street_2)
+        
+                                            <p>set street 2</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCity">getCity</a>()
+        
+                                            <p>get city</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCity">setCity</a>(string $city)
+        
+                                            <p>set city</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getState">getState</a>()
+        
+                                            <p>get state</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setState">setState</a>(string $state)
+        
+                                            <p>set state</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCountry">getCountry</a>()
+        
+                                            <p>get country</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCountry">setCountry</a>(string $country)
+        
+                                            <p>set country</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPostalCode">getPostalCode</a>()
+        
+                                            <p>get postal code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPostalCode">setPostalCode</a>(string $postal_code)
+        
+                                            <p>set postal code</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -486,7 +551,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/AbstractTemplatePayload.html#method___construct"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\AbstractTemplatePayload">AbstractTemplatePayload</abbr></a> at         line 44</div>
+        <div class="location">in <a href="../../../../../../Andre/Bionic/AbstractMessage.html#method___construct"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a> at         line 33</div>
         <code>                    
     <strong>__construct</strong>($data = [])
         </code>
@@ -496,7 +561,7 @@
     
 
                     <div class="method-description">
-                                    <p>AbstractTemplatePayload constructor.</p>                                                </div>
+                                    <p>new message instance</p>                    <p>AbstractMessage constructor.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -586,10 +651,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getTemplateType">
-        <div class="location">in <a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/AbstractTemplatePayload.html#method_getTemplateType"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\AbstractTemplatePayload">AbstractTemplatePayload</abbr></a> at         line 58</div>
-        <code>                    string
-    <strong>getTemplateType</strong>()
+                    <h3 id="method_getId">
+        <div class="location">at         line 68</div>
+        <code>                    int
+    <strong>getId</strong>()
         </code>
     </h3>
     <div class="details">
@@ -597,14 +662,14 @@
     
 
                     <div class="method-description">
-                                    <p>get template type</p>                                                </div>
+                                    <p>get id</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>
@@ -616,10 +681,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setTemplateType">
-        <div class="location">at         line 34</div>
-        <code>            protected        
-    <strong>setTemplateType</strong>()
+                    <h3 id="method_setId">
+        <div class="location">at         line 79</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setId</strong>(int $id)
         </code>
     </h3>
     <div class="details">
@@ -627,65 +692,14 @@
     
 
                     <div class="method-description">
-                                    <p>set template type</p>                                                </div>
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getElements">
-        <div class="location">in <a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html#method_getElements"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a> at         line 39</div>
-        <code>                    array
-    <strong>getElements</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>get elements</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setElements">
-        <div class="location">in <a href="../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payload/GenericTemplatePayload.html#method_setElements"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\GenericTemplatePayload">GenericTemplatePayload</abbr></a> at         line 50</div>
-        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
-    <strong>setElements</strong>(array $elements)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>set elements</p>                                                </div>
+                                    <p>set id</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$elements</td>
+                <td>int</td>
+                <td>$id</td>
                 <td></td>
             </tr>
             </table>
@@ -695,7 +709,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr></td>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -707,10 +721,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getTopElementStyle">
-        <div class="location">at         line 44</div>
+                    <h3 id="method_getName">
+        <div class="location">at         line 91</div>
         <code>                    string
-    <strong>getTopElementStyle</strong>()
+    <strong>getName</strong>()
         </code>
     </h3>
     <div class="details">
@@ -718,7 +732,7 @@
     
 
                     <div class="method-description">
-                                    <p>get top element style</p>                                                </div>
+                                    <p>get name</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -737,10 +751,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setTopElementStyle">
-        <div class="location">at         line 55</div>
-        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
-    <strong>setTopElementStyle</strong>(string $top_element_style)
+                    <h3 id="method_setName">
+        <div class="location">at         line 102</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setName</strong>(string $name)
         </code>
     </h3>
     <div class="details">
@@ -748,14 +762,14 @@
     
 
                     <div class="method-description">
-                                    <p>set top element style</p>                                                </div>
+                                    <p>set name</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$top_element_style</td>
+                <td>$name</td>
                 <td></td>
             </tr>
             </table>
@@ -765,7 +779,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr></td>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -777,10 +791,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getButtons">
-        <div class="location">at         line 67</div>
-        <code>                    array
-    <strong>getButtons</strong>()
+                    <h3 id="method_getStreet1">
+        <div class="location">at         line 114</div>
+        <code>                    string
+    <strong>getStreet1</strong>()
         </code>
     </h3>
     <div class="details">
@@ -788,14 +802,14 @@
     
 
                     <div class="method-description">
-                                    <p>get buttons</p>                                                </div>
+                                    <p>get street 1</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>string</td>
             <td></td>
         </tr>
     </table>
@@ -807,10 +821,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setButtons">
-        <div class="location">at         line 78</div>
-        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr>
-    <strong>setButtons</strong>(array $buttons)
+                    <h3 id="method_setStreet1">
+        <div class="location">at         line 125</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setStreet1</strong>(string $street_1)
         </code>
     </h3>
     <div class="details">
@@ -818,14 +832,14 @@
     
 
                     <div class="method-description">
-                                    <p>set buttons</p>                                                </div>
+                                    <p>set street 1</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
-                <td>$buttons</td>
+                <td>string</td>
+                <td>$street_1</td>
                 <td></td>
             </tr>
             </table>
@@ -835,7 +849,357 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payload\$this">$this</abbr></td>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStreet2">
+        <div class="location">at         line 137</div>
+        <code>                    string
+    <strong>getStreet2</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get street 2</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStreet2">
+        <div class="location">at         line 148</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setStreet2</strong>(string $street_2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set street 2</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$street_2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCity">
+        <div class="location">at         line 160</div>
+        <code>                    string
+    <strong>getCity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get city</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCity">
+        <div class="location">at         line 171</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setCity</strong>(string $city)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set city</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$city</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location">at         line 183</div>
+        <code>                    string
+    <strong>getState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get state</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location">at         line 194</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setState</strong>(string $state)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set state</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountry">
+        <div class="location">at         line 206</div>
+        <code>                    string
+    <strong>getCountry</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get country</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCountry">
+        <div class="location">at         line 217</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setCountry</strong>(string $country)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set country</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$country</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPostalCode">
+        <div class="location">at         line 229</div>
+        <code>                    string
+    <strong>getPostalCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get postal code</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPostalCode">
+        <div class="location">at         line 240</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr>
+    <strong>setPostalCode</strong>(string $postal_code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set postal code</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$postal_code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\$this">$this</abbr></td>
             <td></td>
         </tr>
     </table>

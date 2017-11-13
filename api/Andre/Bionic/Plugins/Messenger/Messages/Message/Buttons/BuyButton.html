@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\CallButton | Bionic Api Documentation</title>
+    <title>Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\BuyButton | Bionic Api Documentation</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Andre_Bionic_Plugins_Messenger_Messages_Message_Buttons_CallButton" data-root-path="../../../../../../../">
+    <body id="class" data-name="class:Andre_Bionic_Plugins_Messenger_Messages_Message_Buttons_BuyButton" data-root-path="../../../../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../../../../Andre.html">Andre</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic.html">Bionic</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins.html">Plugins</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger.html">Messenger</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages.html">Messages</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message.html">Message</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons.html">Buttons</a></li><li class="backslash">\</li><li>CallButton</li>
+                        <li><a href="../../../../../../../Andre.html">Andre</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic.html">Bionic</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins.html">Plugins</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger.html">Messenger</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages.html">Messages</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message.html">Message</a></li><li class="backslash">\</li><li><a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons.html">Buttons</a></li><li class="backslash">\</li><li>BuyButton</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            CallButton
+            BuyButton
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>CallButton</strong>        extends <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/AbstractButton.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\AbstractButton">AbstractButton</abbr></a>
+    <strong>BuyButton</strong>        extends <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a>
 </p>
 
         
@@ -190,13 +190,69 @@
                 </td>
                 <td>$title</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#property_title"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_payload">
                                         protected                                        string
                 </td>
                 <td>$payload</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#property_payload"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_payment_summary">
+                                        protected                                        array
+                </td>
+                <td>$payment_summary</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currency">
+                                        protected                                        string
+                </td>
+                <td>$currency</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_payment_type">
+                                        protected                                        string
+                </td>
+                <td>$payment_type</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_is_test_payment">
+                                        protected                                        bool
+                </td>
+                <td>$is_test_payment</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_merchant_name">
+                                        protected                                        string
+                </td>
+                <td>$merchant_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requested_user_info">
+                                        protected                                        array
+                </td>
+                <td>$requested_user_info</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_price_list">
+                                        protected                                        array
+                </td>
+                <td>$price_list</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -304,7 +360,7 @@
                     <a href="#method_getTitle">getTitle</a>()
         
                                             <p>get title</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_getTitle"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -314,7 +370,7 @@
                     <a href="#method_setTitle">setTitle</a>(string $title)
         
                                             <p>set title</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_setTitle"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -324,7 +380,7 @@
                     <a href="#method_getPayload">getPayload</a>()
         
                                             <p>get payload</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_getPayload"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -334,6 +390,136 @@
                     <a href="#method_setPayload">setPayload</a>(string $payload)
         
                                             <p>set payload</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_setPayload"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPaymentSummary">getPaymentSummary</a>()
+        
+                                            <p>get payment summary</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrency">getCurrency</a>()
+        
+                                            <p>get currency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCurrency">setCurrency</a>(string $currency)
+        
+                                            <p>set currency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPaymentType">getPaymentType</a>()
+        
+                                            <p>get payment type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPaymentType">setPaymentType</a>(string $payment_type)
+        
+                                            <p>set payment type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTestPayment">isTestPayment</a>()
+        
+                                            <p>is test payment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIsTestPayment">setIsTestPayment</a>(bool $is_test_payment)
+        
+                                            <p>determine if is test payment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMerchantName">getMerchantName</a>()
+        
+                                            <p>get Merchant name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMerchantName">setMerchantName</a>(string $merchant_name)
+        
+                                            <p>set merchant name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestedUserInfo">getRequestedUserInfo</a>()
+        
+                                            <p>get requested user info</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestedUserInfo">setRequestedUserInfo</a>(array $requested_user_info = [])
+        
+                                            <p>set requested user info</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPriceList">getPriceList</a>()
+        
+                                            <p>get price list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPriceList">setPriceList</a>(array $price_list = [])
+        
+                                            <p>set price list</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -566,7 +752,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setType">
-        <div class="location">at         line 35</div>
+        <div class="location">at         line 59</div>
         <code>            protected        
     <strong>setType</strong>()
         </code>
@@ -617,7 +803,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTitle">
-        <div class="location">at         line 45</div>
+        <div class="location">in <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_getTitle"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a> at         line 45</div>
         <code>                    string
     <strong>getTitle</strong>()
         </code>
@@ -647,7 +833,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTitle">
-        <div class="location">at         line 56</div>
+        <div class="location">in <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_setTitle"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a> at         line 56</div>
         <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
     <strong>setTitle</strong>(string $title)
         </code>
@@ -687,7 +873,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPayload">
-        <div class="location">at         line 68</div>
+        <div class="location">in <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_getPayload"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a> at         line 68</div>
         <code>                    string
     <strong>getPayload</strong>()
         </code>
@@ -717,7 +903,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPayload">
-        <div class="location">at         line 79</div>
+        <div class="location">in <a href="../../../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message/Buttons/PostBackButton.html#method_setPayload"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\PostBackButton">PostBackButton</abbr></a> at         line 79</div>
         <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
     <strong>setPayload</strong>(string $payload)
         </code>
@@ -735,6 +921,456 @@
                     <tr>
                 <td>string</td>
                 <td>$payload</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPaymentSummary">
+        <div class="location">at         line 69</div>
+        <code>                    array
+    <strong>getPaymentSummary</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get payment summary</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrency">
+        <div class="location">at         line 79</div>
+        <code>                    string
+    <strong>getCurrency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get currency</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCurrency">
+        <div class="location">at         line 90</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setCurrency</strong>(string $currency)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set currency</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$currency</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPaymentType">
+        <div class="location">at         line 103</div>
+        <code>                    string
+    <strong>getPaymentType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get payment type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPaymentType">
+        <div class="location">at         line 114</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setPaymentType</strong>(string $payment_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set payment type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$payment_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTestPayment">
+        <div class="location">at         line 127</div>
+        <code>                    bool
+    <strong>isTestPayment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>is test payment</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIsTestPayment">
+        <div class="location">at         line 138</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setIsTestPayment</strong>(bool $is_test_payment)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>determine if is test payment</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$is_test_payment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMerchantName">
+        <div class="location">at         line 151</div>
+        <code>                    string
+    <strong>getMerchantName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get Merchant name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMerchantName">
+        <div class="location">at         line 162</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setMerchantName</strong>(string $merchant_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set merchant name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$merchant_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestedUserInfo">
+        <div class="location">at         line 175</div>
+        <code>                    array
+    <strong>getRequestedUserInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get requested user info</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestedUserInfo">
+        <div class="location">at         line 186</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setRequestedUserInfo</strong>(array $requested_user_info = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set requested user info</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requested_user_info</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPriceList">
+        <div class="location">at         line 199</div>
+        <code>                    array
+    <strong>getPriceList</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get price list</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPriceList">
+        <div class="location">at         line 210</div>
+        <code>                    <abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message\Buttons\$this">$this</abbr>
+    <strong>setPriceList</strong>(array $price_list = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set price list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$price_list</td>
                 <td></td>
             </tr>
             </table>

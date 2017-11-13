@@ -79,7 +79,7 @@
     </div>
 
     <p>    class
-    <strong>MessagingItem</strong>        extends <a href="../../../../../Andre/Bionic/AbstractMessage.html"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a>
+    <strong>MessagingItem</strong>        extends <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a>
 </p>
 
         
@@ -128,7 +128,7 @@
                 </td>
                 <td>$sender</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_sender"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_recipient">
@@ -136,7 +136,7 @@
                 </td>
                 <td>$recipient</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_recipient"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_timestamp">
@@ -144,7 +144,7 @@
                 </td>
                 <td>$timestamp</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_timestamp"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_message">
@@ -152,7 +152,23 @@
                 </td>
                 <td>$message</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_message"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_delivery">
+                                        protected                                        array
+                </td>
+                <td>$delivery</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_delivery"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_read">
+                                        protected                                        array
+                </td>
+                <td>$read</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#property_read"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_postback">
@@ -187,18 +203,58 @@
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_delivery">
+                <td class="type" id="property_policy_enforcement">
                                         protected                                        array
                 </td>
-                <td>$delivery</td>
+                <td>$policy_enforcement</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_read">
+                <td class="type" id="property_payment">
                                         protected                                        array
                 </td>
-                <td>$read</td>
+                <td>$payment</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_checkout_update">
+                                        protected                                        array
+                </td>
+                <td>$checkout_update</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pre_checkout">
+                                        protected                                        array
+                </td>
+                <td>$pre_checkout</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pass_thread_control">
+                                        protected                                        array
+                </td>
+                <td>$pass_thread_control</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_take_thread_control">
+                                        protected                                        array
+                </td>
+                <td>$take_thread_control</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_app_roles">
+                                        protected                                        array
+                </td>
+                <td>$app_roles</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -255,8 +311,8 @@
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>($data = [])
         
-                                            <p>new message instance</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/AbstractMessage.html#method___construct"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a></small></div>
+                                            <p>MessagingItem constructor.</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -280,13 +336,13 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a>
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a>|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getSender">getSender</a>()
         
                                             <p>get sender</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getSender"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -296,7 +352,7 @@
                     <a href="#method_getRecipient">getRecipient</a>()
         
                                             <p>get recipient</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getRecipient"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -306,7 +362,7 @@
                     <a href="#method_getTimestamp">getTimestamp</a>()
         
                                             <p>get timestamp</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getTimestamp"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -316,7 +372,27 @@
                     <a href="#method_getMessage">getMessage</a>()
         
                                             <p>get message</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getMessage"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Delivery.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Delivery">Delivery</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDelivery">getDelivery</a>()
+        
+                                            <p>get delivery</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getDelivery"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Read.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Read">Read</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRead">getRead</a>()
+        
+                                            <p>get read</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getRead"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -360,22 +436,72 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Delivery.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Delivery">Delivery</abbr></a>|null
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PolicyEnforcement.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PolicyEnforcement">PolicyEnforcement</abbr></a>|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getDelivery">getDelivery</a>()
+                    <a href="#method_getPolicyEnforcement">getPolicyEnforcement</a>()
         
-                                            <p>get delivery</p>                </div>
+                                            <p>get policy enforcement</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Read.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Read">Read</abbr></a>|null
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/Payment.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\Payment">Payment</abbr></a>|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getRead">getRead</a>()
+                    <a href="#method_getPayment">getPayment</a>()
         
-                                            <p>get read</p>                </div>
+                                            <p>get payment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/CheckoutUpdate.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\CheckoutUpdate">CheckoutUpdate</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCheckoutUpdate">getCheckoutUpdate</a>()
+        
+                                            <p>get checkout update</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/PreCheckout.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\PreCheckout">PreCheckout</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreCheckout">getPreCheckout</a>()
+        
+                                            <p>get pre checkout</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PassThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PassThreadControl">PassThreadControl</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPassThreadControl">getPassThreadControl</a>()
+        
+                                            <p>get pass thread control</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/TakeThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\TakeThreadControl">TakeThreadControl</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTakeThreadControl">getTakeThreadControl</a>()
+        
+                                            <p>get take thread control</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AppRoles.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AppRoles">AppRoles</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAppRoles">getAppRoles</a>()
+        
+                                            <p>get app roles</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -507,7 +633,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../../Andre/Bionic/AbstractMessage.html#method___construct"><abbr title="Andre\Bionic\AbstractMessage">AbstractMessage</abbr></a> at         line 33</div>
+        <div class="location">at         line 84</div>
         <code>                    
     <strong>__construct</strong>($data = [])
         </code>
@@ -517,7 +643,7 @@
     
 
                     <div class="method-description">
-                                    <p>new message instance</p>                    <p>AbstractMessage constructor.</p>                            </div>
+                                    <p>MessagingItem constructor.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -608,8 +734,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSender">
-        <div class="location">at         line 80</div>
-        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getSender"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 60</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a>|null
     <strong>getSender</strong>()
         </code>
     </h3>
@@ -625,7 +751,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a></td>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Sender.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Sender">Sender</abbr></a>|null</td>
             <td></td>
         </tr>
     </table>
@@ -638,7 +764,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRecipient">
-        <div class="location">at         line 90</div>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getRecipient"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 73</div>
         <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/EndPoint/Recipient.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\EndPoint\Recipient">Recipient</abbr></a>
     <strong>getRecipient</strong>()
         </code>
@@ -668,7 +794,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimestamp">
-        <div class="location">at         line 100</div>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getTimestamp"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 83</div>
         <code>                    int
     <strong>getTimestamp</strong>()
         </code>
@@ -698,7 +824,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMessage">
-        <div class="location">at         line 110</div>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getMessage"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 93</div>
         <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Message.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Message">Message</abbr></a>|null
     <strong>getMessage</strong>()
         </code>
@@ -727,128 +853,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPostback">
-        <div class="location">at         line 123</div>
-        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PostBack.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PostBack">PostBack</abbr></a>|null
-    <strong>getPostback</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>get postback</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PostBack.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PostBack">PostBack</abbr></a>|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getReferral">
-        <div class="location">at         line 136</div>
-        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Referral.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Referral">Referral</abbr></a>|null
-    <strong>getReferral</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>get referral</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Referral.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Referral">Referral</abbr></a>|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getOptin">
-        <div class="location">at         line 149</div>
-        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Optin.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Optin">Optin</abbr></a>|null
-    <strong>getOptin</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>get optin</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Optin.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Optin">Optin</abbr></a>|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getAccountLinking">
-        <div class="location">at         line 162</div>
-        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AccountLinking.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AccountLinking">AccountLinking</abbr></a>|null
-    <strong>getAccountLinking</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>get account linking</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AccountLinking.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AccountLinking">AccountLinking</abbr></a>|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getDelivery">
-        <div class="location">at         line 175</div>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getDelivery"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 106</div>
         <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Delivery.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Delivery">Delivery</abbr></a>|null
     <strong>getDelivery</strong>()
         </code>
@@ -878,7 +884,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRead">
-        <div class="location">at         line 188</div>
+        <div class="location">in <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html#method_getRead"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> at         line 119</div>
         <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Read.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Read">Read</abbr></a>|null
     <strong>getRead</strong>()
         </code>
@@ -896,6 +902,336 @@
                     <table class="table table-condensed">
         <tr>
             <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Read.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Read">Read</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPostback">
+        <div class="location">at         line 96</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PostBack.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PostBack">PostBack</abbr></a>|null
+    <strong>getPostback</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get postback</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PostBack.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PostBack">PostBack</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferral">
+        <div class="location">at         line 109</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Referral.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Referral">Referral</abbr></a>|null
+    <strong>getReferral</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get referral</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Referral.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Referral">Referral</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptin">
+        <div class="location">at         line 122</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Optin.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Optin">Optin</abbr></a>|null
+    <strong>getOptin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get optin</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Optin.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Optin">Optin</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccountLinking">
+        <div class="location">at         line 135</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AccountLinking.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AccountLinking">AccountLinking</abbr></a>|null
+    <strong>getAccountLinking</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get account linking</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AccountLinking.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AccountLinking">AccountLinking</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPolicyEnforcement">
+        <div class="location">at         line 148</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PolicyEnforcement.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PolicyEnforcement">PolicyEnforcement</abbr></a>|null
+    <strong>getPolicyEnforcement</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get policy enforcement</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PolicyEnforcement.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PolicyEnforcement">PolicyEnforcement</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPayment">
+        <div class="location">at         line 161</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/Payment.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\Payment">Payment</abbr></a>|null
+    <strong>getPayment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get payment</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/Payment.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\Payment">Payment</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCheckoutUpdate">
+        <div class="location">at         line 174</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/CheckoutUpdate.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\CheckoutUpdate">CheckoutUpdate</abbr></a>|null
+    <strong>getCheckoutUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get checkout update</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/CheckoutUpdate.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\CheckoutUpdate">CheckoutUpdate</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreCheckout">
+        <div class="location">at         line 187</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/PreCheckout.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\PreCheckout">PreCheckout</abbr></a>|null
+    <strong>getPreCheckout</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get pre checkout</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/Payment/PreCheckout.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\Payment\PreCheckout">PreCheckout</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPassThreadControl">
+        <div class="location">at         line 200</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PassThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PassThreadControl">PassThreadControl</abbr></a>|null
+    <strong>getPassThreadControl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get pass thread control</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/PassThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\PassThreadControl">PassThreadControl</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTakeThreadControl">
+        <div class="location">at         line 213</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/TakeThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\TakeThreadControl">TakeThreadControl</abbr></a>|null
+    <strong>getTakeThreadControl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get take thread control</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/TakeThreadControl.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\TakeThreadControl">TakeThreadControl</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAppRoles">
+        <div class="location">at         line 226</div>
+        <code>                    <a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AppRoles.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AppRoles">AppRoles</abbr></a>|null
+    <strong>getAppRoles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get app roles</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Andre/Bionic/Plugins/Messenger/Messages/AppRoles.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AppRoles">AppRoles</abbr></a>|null</td>
             <td></td>
         </tr>
     </table>
