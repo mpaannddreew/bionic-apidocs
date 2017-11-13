@@ -229,6 +229,14 @@
                 <td class="last"></td>
                 <td></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_graph_api_version">
+                                        protected                                        string
+                </td>
+                <td>$graph_api_version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
             </table>
 
     
@@ -304,6 +312,26 @@
         
                                             <p>get user profile from facebook</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/AccessesUserProfile.html#method_getUserProfile"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\AccessesUserProfile">AccessesUserProfile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrivacyUrl">setPrivacyUrl</a>($privacy_url)
+        
+                                            <p>set privacy policy URL</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPrivacyUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPublicKey">setPublicKey</a>($public_key)
+        
+                                            <p>set public key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPublicKey"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -387,6 +415,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_messengerProfileFullUrl">messengerProfileFullUrl</a>()
+        
+                                            <p>messenger profile full url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_messengerProfileFullUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -467,6 +505,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_messagingFullUrl">messagingFullUrl</a>()
+        
+                                            <p>messaging full url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_messagingFullUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -495,6 +543,16 @@
                     <a href="#method_setPageAccessToken">setPageAccessToken</a>(string $page_access_token)
         
                                             <p>set new page access token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGraphApiVersion">setGraphApiVersion</a>($graph_api_version)
+        
+                                            <p>set new graph api version</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -542,9 +600,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_checkForPageAccessToken">checkForPageAccessToken</a>()
+                    <a href="#method_checkForPageAccessTokenAndGraphApiVersion">checkForPageAccessTokenAndGraphApiVersion</a>()
         
-                                            <p>check if page access token has been provided before making any http request</p>                </div>
+                                            <p>check if page access token and graph version have been provided before making any http request</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -555,7 +613,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 50</div>
+        <div class="location">at         line 55</div>
         <code>                    
     <strong>__construct</strong>(array $config = [])
         </code>
@@ -628,7 +686,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createWebHookEvent">
-        <div class="location">at         line 96</div>
+        <div class="location">at         line 111</div>
         <code>            protected        
     <strong>createWebHookEvent</strong>()
         </code>
@@ -749,8 +807,88 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setPrivacyUrl">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPrivacyUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 35</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>setPrivacyUrl</strong>($privacy_url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set privacy policy URL</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$privacy_url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPublicKey">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPublicKey"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 50</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>setPublicKey</strong>($public_key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set public key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$public_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setGreetingText">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setGreetingText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 35</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setGreetingText"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 65</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>setGreetingText</strong>(array $greetings = [])
         </code>
@@ -790,7 +928,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setGetStarted">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setGetStarted"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 53</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setGetStarted"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 83</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>setGetStarted</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/BotProfile/GetStarted.html"><abbr title="Andre\Bionic\Plugins\Messenger\BotProfile\GetStarted">GetStarted</abbr></a> $getStarted)
         </code>
@@ -830,7 +968,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_whitelistDomains">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_whitelistDomains"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 66</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_whitelistDomains"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 96</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>whitelistDomains</strong>(array $domains = [])
         </code>
@@ -870,7 +1008,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPersistentMenu">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPersistentMenu"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 79</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setPersistentMenu"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 109</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>setPersistentMenu</strong>(array $persistent_menus = [])
         </code>
@@ -910,7 +1048,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setProperties">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setProperties"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 100</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setProperties"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 130</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>setProperties</strong>(array $greetings = [], <a href="../../../../Andre/Bionic/Plugins/Messenger/BotProfile/GetStarted.html"><abbr title="Andre\Bionic\Plugins\Messenger\BotProfile\GetStarted">GetStarted</abbr></a> $getStarted = null, array $domains = [], array $persistent_menus = [])
         </code>
@@ -965,7 +1103,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteProperties">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_deleteProperties"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 135</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_deleteProperties"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 165</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>deleteProperties</strong>(array $properties = [])
         </code>
@@ -1005,7 +1143,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setProperty">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setProperty"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 146</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_setProperty"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 176</div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>setProperty</strong>(array $data)
         </code>
@@ -1045,7 +1183,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteProperty">
-        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_deleteProperty"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 159</div>
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_deleteProperty"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 189</div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>deleteProperty</strong>(array $data)
         </code>
@@ -1073,6 +1211,36 @@
                     <table class="table table-condensed">
         <tr>
             <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_messengerProfileFullUrl">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/ManagesBotProfile.html#method_messengerProfileFullUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\ManagesBotProfile">ManagesBotProfile</abbr></a> at         line 201</div>
+        <code>            protected        string
+    <strong>messengerProfileFullUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>messenger profile full url</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
             <td></td>
         </tr>
     </table>
@@ -1412,6 +1580,36 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_messagingFullUrl">
+        <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/SendsMessages.html#method_messagingFullUrl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\SendsMessages">SendsMessages</abbr></a> at         line 168</div>
+        <code>            protected        string
+    <strong>messagingFullUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>messaging full url</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_passThreadControl">
         <div class="location">in <a href="../../../../Andre/Bionic/Plugins/Messenger/Traits/PassesThreadControl.html#method_passThreadControl"><abbr title="Andre\Bionic\Plugins\Messenger\Traits\PassesThreadControl">PassesThreadControl</abbr></a> at         line 34</div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
@@ -1504,7 +1702,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPageAccessToken">
-        <div class="location">at         line 61</div>
+        <div class="location">at         line 66</div>
         <code>                    
     <strong>setPageAccessToken</strong>(string $page_access_token)
         </code>
@@ -1534,8 +1732,39 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setGraphApiVersion">
+        <div class="location">at         line 76</div>
+        <code>                    
+    <strong>setGraphApiVersion</strong>($graph_api_version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set new graph api version</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$graph_api_version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_emitEvents">
-        <div class="location">at         line 71</div>
+        <div class="location">at         line 86</div>
         <code>                    
     <strong>emitEvents</strong>(<a href="../../../../Andre/Bionic/AbstractBionic.html"><abbr title="Andre\Bionic\AbstractBionic">AbstractBionic</abbr></a> $bionic)
         </code>
@@ -1566,7 +1795,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_newHttpClient">
-        <div class="location">at         line 83</div>
+        <div class="location">at         line 98</div>
         <code>            protected        <abbr title="GuzzleHttp\Client">Client</abbr>
     <strong>newHttpClient</strong>()
         </code>
@@ -1596,7 +1825,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_iterateOverEntryMessagesAndEmitEvents">
-        <div class="location">at         line 104</div>
+        <div class="location">at         line 119</div>
         <code>            protected        
     <strong>iterateOverEntryMessagesAndEmitEvents</strong>()
         </code>
@@ -1617,7 +1846,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_emitAbstractChannelEvents">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 192</div>
         <code>            protected        
     <strong>emitAbstractChannelEvents</strong>(<a href="../../../../Andre/Bionic/Plugins/Messenger/Messages/AbstractChannelItem.html"><abbr title="Andre\Bionic\Plugins\Messenger\Messages\AbstractChannelItem">AbstractChannelItem</abbr></a> $channelItem, string $channel = &quot;messaging&quot;)
         </code>
@@ -1652,10 +1881,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_checkForPageAccessToken">
-        <div class="location">at         line 215</div>
+                    <h3 id="method_checkForPageAccessTokenAndGraphApiVersion">
+        <div class="location">at         line 230</div>
         <code>            protected        
-    <strong>checkForPageAccessToken</strong>()
+    <strong>checkForPageAccessTokenAndGraphApiVersion</strong>()
         </code>
     </h3>
     <div class="details">
@@ -1663,7 +1892,7 @@
     
 
                     <div class="method-description">
-                                    <p>check if page access token has been provided before making any http request</p>                                                </div>
+                                    <p>check if page access token and graph version have been provided before making any http request</p>                                                </div>
                 <div class="tags">
             
             
